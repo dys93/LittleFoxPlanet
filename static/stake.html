@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <link rel="stylesheet" href="{{static_url("css/main.css")}}">
+    <script src="{{static_url("js/jquery-1.9.1.js")}}"></script>
+    <script src="{{static_url("js/main.js")}}"></script>
+</head>
+<body>
+    <div id="page3" class="container">
+        <div class="logo">
+            <img src="{{static_url("img/bg-page3.jpg")}}"/>
+        </div>
+        <div class="weather">
+            <div>
+                <img class="weather1" src="{{static_url("img/sm-5.jpg")}}">
+            </div>
+            <div>
+                <img class="weather2" src="{{static_url("img/sm-6.jpg")}}">
+            </div>
+            <div>
+                <img class="weather3" src="{{static_url("img/sm-7.jpg")}}">
+            </div>
+            <div>
+                <img class="weather4" src="{{static_url("img/sm-8.jpg")}}">
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <img src="{{static_url("img/sm-4.png")}}" height="50px">
+                <span style="margin:0 15px">金币：</span>
+                <span class="number-money">100</span>
+            </div>
+            <div>
+                <img src="{{static_url("img/sm-3.png")}}" height="50px">
+                <span style="margin:0 15px">气象：</span>
+                <span class="number-weather">10</span>
+            </div>
+            <div>
+                <img src="{{static_url("img/sm-1.png")}}" height="50px">
+                <span style="margin:0 15px">奶牛：</span>
+                <span class="number-cow">19</span>
+            </div>
+            <div>
+                <img src="{{static_url("img/sm-2.png")}}" height="50px">
+                <span style="margin:0 15px">时间：</span>
+                <span class="number-date">10天</span>
+            </div>
+        </div>
+        <div class="button">
+            <img class="btn-plus" src="{{static_url("img/btn-plus.png")}}">
+            <img class="btn-minus" src="{{static_url("img/btn-minus.png")}}">
+        </div>
+    </div>
+    <script>
+        $(function(){
+            $(".btn-plus").click(function(){
+                $(".number-money").text(parseInt($(".number-money").text())+5);
+            })
+            $(".btn-minus").click(function(){
+                if($(".number-money").text()!=0){
+                    $(".number-money").text(parseInt($(".number-money").text())-5);
+                }
+            })
+        })
+    </script>
+</body>
+</html>

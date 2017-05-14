@@ -1,0 +1,448 @@
+@charset "utf-8";
+
+/* css reset*/
+html, body, div, span, object, iframe,h1, h2,
+h3, h4, h5, h6, p, blockquote, pre,abbr, address, cite, code,del, dfn,
+em, img, ins,kbd, q, samp,small, strong, sub, sup, var,b, i,dl, dt, dd,
+ol, ul, li,fieldset, form, label, legend,table, caption, tbody,
+tfoot,thead,tr, th, td,article, aside, canvas, details, figcaption,
+figure, footer, header, hgroup, menu, nav, section, summary,time, mark,
+audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    outline-style:none;
+    font-family: "Microsoft YaHei","sans-serif";
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+}
+ul li{
+    list-style: none;
+}
+#index,#map,#page3,#page4{
+    text-align: center;
+    overflow: hidden;
+}
+#index img,#map img,#page3 img,#page4 img,#page5 img,#page6 img,#page7 img{
+    max-width: 100%;
+}
+.fluid{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 1);
+    animation: fluid 3s;
+    animation-fill-mode:forwards;
+}
+@keyframes fluid {
+    from{background: rgba(0, 0, 0, 1)}
+    to{background: rgba(0, 0, 0, 0)}
+}
+#map .button{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+#map .button img{
+    height: 40px;
+}
+#page3 .content{
+    top: 20%;
+    left: 55%;
+    position: absolute;
+}
+#page3 .content div{
+    line-height: 50px;
+    overflow: hidden;
+    height: 60px;
+}
+#page3 .content img{
+    float: left;
+}
+#page3 .content span{
+    font-size: 30px;
+    color: #fff;
+    float: left;
+}
+#page3 .weather{
+    top: 10%;
+    left: 5%;
+    position: absolute;
+}
+#page3 .weather div{
+    line-height: 40px;
+}
+#page3 .weather img{
+    height: 60px;
+}
+#page3 .btn-plus{
+    top: 40px;
+    right: 40px;
+    position: absolute;
+    height: 50px;
+}
+#page3 .btn-minus{
+    bottom: 40px;
+    right: 40px;
+    position: absolute;
+    height: 50px;
+}
+#page4 .content, #page5 .content{
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+#page4 .content div{
+    /*margin-left: 15%;*/
+}
+#page4 .content .text,#page5 .content .text{
+    font-size: 40px;
+    color: #681150;
+    font-weight: bold;
+    letter-spacing:8px;
+    margin-bottom: 10px;
+}
+#page4 .content img,#page5 .content img{
+    height: 55px;
+}
+#page4 .content span,#page5 .content span{
+    font-size: 35px;
+    color: #c90064;
+    font-weight: bold;
+    bottom: 16px;
+    position: relative;
+}
+#page5 .content span{
+    color: #fff;
+}
+#page4 .animation img:nth-child(1){
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    animation: appear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+    opacity: 0;
+}
+#page4 .animation img:nth-child(2){
+    position: absolute;
+    bottom: 50px;
+    right: 280px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(3){
+    position: absolute;
+    bottom: 20px;
+    right: 300px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(4){
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(5){
+    position: absolute;
+    bottom: 80px;
+    right: 200px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(6){
+    position: absolute;
+    bottom: 70px;
+    right: 400px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(7){
+    position: absolute;
+    bottom: 70px;
+    right: 350px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(8){
+    position: absolute;
+    bottom: 160px;
+    right: 250px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+#page4 .animation img:nth-child(9){
+    position: absolute;
+    bottom: 160px;
+    right: 150px;
+    animation: appear 1s;
+    animation-delay: 1s;
+    opacity: 0;
+    animation-fill-mode:forwards;
+}
+@keyframes appear {
+    0%   {opacity: 0;transform: scale(1)}
+    50%  {opacity: 0.5;transform: scale(2)}
+    100% {opacity: 1;transform: scale(1)}
+}
+#page5 .animation img:nth-child(1){
+    position: absolute;
+    bottom: 20px;
+    right: 150px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(2){
+    position: absolute;
+    bottom: 20px;
+    right: 220px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(3){
+     position: absolute;
+     bottom: 60px;
+     right: 130px;
+     animation: disappear 1s;
+     animation-fill-mode:forwards;
+     animation-delay: 1s;
+}
+#page5 .animation img:nth-child(4){
+    position: absolute;
+    bottom: 60px;
+    right: 250px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(4){
+     position: absolute;
+     bottom: 60px;
+     right: 380px;
+     animation: disappear 1s;
+     animation-fill-mode:forwards;
+     animation-delay: 1s;
+ }
+#page5 .animation img:nth-child(5){
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(6){
+    position: absolute;
+    bottom: 200px;
+    right: 250px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(7){
+    position: absolute;
+    bottom: 70px;
+    right: 300px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(8){
+    position: absolute;
+    bottom: 30px;
+    right: 350px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+#page5 .animation img:nth-child(9){
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+    animation: disappear 1s;
+    animation-fill-mode:forwards;
+    animation-delay: 1s;
+}
+@keyframes disappear {
+    0%   {opacity: 1;transform: scale(1)}
+    50%  {opacity: 0.5;transform: scale(2)}
+    100% {opacity: 0;transform: scale(1)}
+}
+/*#page4 .content img:nth-child(1){
+    animation: fly-1 1s ease-in-out;
+    animation-fill-mode:forwards;
+    position: absolute;
+    opacity: 0;
+}*/
+#page4 .content img:nth-child(2){
+    animation: fly-2 1s ease-in-out;
+    animation-fill-mode:forwards;
+    position: absolute;
+    animation-delay:0.15s;
+    opacity: 0;
+}
+#page4 .content img:nth-child(3){
+    animation: fly-3 1s ease-in-out;
+    animation-fill-mode:forwards;
+    position: absolute;
+    animation-delay:0.3s;
+    opacity: 0;
+}
+#page4 .content img:nth-child(4){
+    animation: fly-4 1s ease-in-out;
+    animation-fill-mode:forwards;
+    position: absolute;
+    animation-delay:0.45s;
+    opacity: 0;
+}
+#page4 .content img:nth-child(5){
+    animation: fly-5 1s ease-in-out;
+    animation-fill-mode:forwards;
+    position: absolute;
+    animation-delay:0.6s;
+    opacity: 0;
+}
+@keyframes fly-1 {
+    from{left: 0;opacity: 0;}
+    to{left: 30%;opacity: 1;}
+}
+@keyframes fly-2 {
+    from{left: 0;opacity: 0;;transform: scale(2);-webkit-transform: scale(2)}
+    to{left: 30%;opacity: 1;margin-left: 80px;transform: scale(1.0);-webkit-transform:scale(1.0)}
+}
+@keyframes fly-3 {
+    from{left: 0;opacity: 0;transform: scale(3);-webkit-transform: scale(3)}
+    to{left: 30%;opacity: 1;margin-left: 160px;transform: scale(1.0);-webkit-transform:scale(1.0)}
+}
+@keyframes fly-4 {
+    from{left: 0;opacity: 0;transform: scale(4);-webkit-transform: scale(4)}
+    to{left: 30%;opacity: 1;margin-left: 240px;transform: scale(1.0);-webkit-transform:scale(1.0)}
+}
+@keyframes fly-5 {
+    from{left: 0;opacity: 0;transform: scale(5);-webkit-transform: scale(5)}
+    to{left: 30%;opacity: 1;margin-left: 320px;transform: scale(1.0);-webkit-transform:scale(1.0)}
+}
+#page4 .button,#page5 .button{
+    right: 7%;
+    bottom: 30%;
+    position: absolute;
+}
+#page5 .content .text{
+    color: #eada3e;
+}
+#page6 .content{
+    width: 50%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    padding-right: 3%;
+}
+#page6 .content .title{
+    margin-top: 10%;
+    height: 30px;
+    padding-left: 20%;
+}
+#page6 .content .title img{
+    height: 30px;
+    float: left;
+}
+#page6 .content .title span{
+    color: #ffcc04;
+    font-size: 20px;
+    margin-left: 15px;
+}
+#page6 .content .detail{
+    margin-top: 5%;
+}
+#page6 .content .detail li{
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.34);
+    padding: 2%;
+}
+#page6 .content .detail .left{
+    float: left;
+    line-height: 40px;
+    color: #fff;
+    width: 60%;
+    margin-right: 10%;
+    border-right: 1px solid rgba(218, 147, 31, 0.88);
+}
+#page6 .content .detail .left .number-rank{
+    color: #f3554d;
+    font-size: 14px;
+    width: 20px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+#page6 .content .detail .left span,#page6 .content .detail .left img{
+    float: left;
+}
+#page6 .content .detail .left img:first-child{
+    width: 18px;
+    top: 10px;
+    position: relative;
+}
+#page6 .content .detail .left img:nth-child(2){
+    height: 40px;
+    margin: 0 15px;
+}
+#page6 .content .detail .right{
+    float: left;
+}
+#page6 .content .detail .right p{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+#page6 .content .detail .right img{
+    height: 20px;
+}
+@media screen and (min-width: 640px){
+    .container{
+        margin: 0 auto;
+    }
+}
+@media screen and (max-height: 320px){
+    #page3 .content span{
+        font-size: 16px !important;
+        font-weight: bold;
+    }
+}
+@media screen and (max-height: 400px){
+    #page3 .content span{
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media screen and (orientation: landscape) {
+    .container{
+        overflow: hidden;
+    }
+
+}
+

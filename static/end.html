@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page7</title>
+    <link rel="stylesheet" href="{{static_url("css/main.css")}}">
+    <link rel="stylesheet" href="{{static_url("css/swiper-3.4.2.min.css")}}">
+    <style>
+        html, body {
+            position: relative;
+            height: 100%;
+        }
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color:#000;
+            margin: 0;
+            padding: 0;
+        }
+        .swiper-container {
+            width: 240px;
+            height: 240px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -120px;
+            margin-top: -120px;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+    <script src="{{static_url("js/jquery-1.9.1.js")}}"></script>
+    <script src="{{static_url("js/main.js")}}"></script>
+</head>
+<body>
+    <div id="page7" class="container">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url({{static_url("img/global-1.png")}})"></div>
+                <div class="swiper-slide" style="background-image:url({{static_url("img/global-2.png")}})"></div>
+                <div class="swiper-slide" style="background-image:url({{static_url("img/global-3.png")}})"></div>
+                <div class="swiper-slide" style="background-image:url({{static_url("img/global-4.png")}})"></div>
+                <div class="swiper-slide" style="background-image:url({{static_url("img/global-5.png")}})"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination" style="display: none"></div>
+        </div>
+        <div class="bg">
+            <img src="{{static_url("img/bg-page7.jpg")}}"/>
+        </div>
+    </div>
+<script src="{{static_url("js/swiper-3.4.2.min.js")}}"></script>
+<script>
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    effect: 'cube',
+    grabCursor: true,
+    cube: {
+            shadow: true,
+            slideShadows: true,
+            shadowOffset: 20,
+            shadowScale: 0.94
+            }
+});
+/*var client_height=document.documentElement.clientHeight;
+var client_width=document.documentElement.clientWidth;
+    $(".swiper-container").css({"margin-left":client_width/2});
+    $(".swiper-container").css({"margin-top":client_height/2});*/
+</script>
+</body>
+</html>

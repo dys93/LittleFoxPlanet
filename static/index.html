@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="{{static_url("js/jquery-1.9.1.js")}}"></script>
+    <script src="{{static_url("js/main.js")}}"></script>
+</head>
+<body>
+    <div id="index" class="container">
+        <img src="{{static_url("img/bg-enter.jpg")}}">
+    </div>
+    <div class="fluid">
+
+    </div>
+    <div>
+        <audio id="audio1" controls>
+            <source src="{{static_url("sources/audio1.mp3")}}" type="audio/mpeg">
+            您的浏览器不支持 audio 元素。
+        </audio>
+    </div>
+    <script>
+        var myAudio1=document.getElementById("audio1");
+        function playAudio1(){
+            myAudio1.play();
+        }
+        playAudio1();
+    </script>
+</body>
+</html>
