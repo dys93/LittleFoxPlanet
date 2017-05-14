@@ -1,4 +1,4 @@
-# LittleFoxPlanet
+# LittleFoxPlanet  Group-32
 Block Chain game base on Bluemix IBM
 
 ## 结构:
