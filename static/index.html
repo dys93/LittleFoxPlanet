@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>首页</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{{static_url("css/main.css")}}">
     <script src="{{static_url("js/jquery-1.9.1.js")}}"></script>
     <script src="{{static_url("js/main.js")}}"></script>
 </head>
@@ -16,17 +16,23 @@
 
     </div>
     <div>
-        <audio id="audio1" controls>
+        <audio id="audio1" onended="Tologin();" controls>
             <source src="{{static_url("sources/audio1.mp3")}}" type="audio/mpeg">
             您的浏览器不支持 audio 元素。
         </audio>
     </div>
     <script>
         var myAudio1=document.getElementById("audio1");
+        function Tologin(){
+            window.location.href="login.html"
+        }
+
         function playAudio1(){
             myAudio1.play();
         }
         playAudio1();
+        
+        
     </script>
 </body>
 </html>

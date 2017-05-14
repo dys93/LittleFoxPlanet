@@ -72,6 +72,7 @@ class BetHandler(tornado.web.RequestHandler):
 		except:
 			self.write("error")
 
+
 class WinHandler(tornado.web.RequestHandler):
 	""" MainHandler class. """
 	def get(self):
