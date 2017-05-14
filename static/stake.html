@@ -52,6 +52,7 @@
         <div class="button">
             <img class="btn-plus" src="{{static_url("img/btn-plus.png")}}">
             <img class="btn-minus" src="{{static_url("img/btn-minus.png")}}">
+            <img class="btn-commit" src="{{static_url("img/btn-commit.png")}}" onclick="confirm()">
         </div>
     </div>
     <script>
@@ -65,6 +66,10 @@
                 }
             })
         })
+
+        function confirm(){
+            window.location.href="win.html"
+        }
     </script>
 </body>
 </html>

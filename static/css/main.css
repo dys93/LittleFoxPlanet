@@ -80,6 +80,13 @@ ul li{
 #page3 .weather img{
     height: 60px;
 }
+#page3 .btn-commit{
+    top: 50%;
+    margin-top:-25px;
+    right: 40px;
+    position: absolute;
+    height: 50px;
+}
 #page3 .btn-plus{
     top: 40px;
     right: 40px;
@@ -422,6 +429,13 @@ ul li{
 #page6 .content .detail .right img{
     height: 20px;
 }
+
+.container.bg img{
+    width: 100%;
+    height:100%;
+}
+
+
 @media screen and (min-width: 640px){
     .container{
         margin: 0 auto;
